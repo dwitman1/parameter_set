@@ -1,0 +1,12 @@
+parameters:
+  - name: "categorical_param"
+    type: Categorical
+    categories: ['Red', 'Green', 'Blue']
+  - name: "weighted categoricalparameter"
+    type: WeightedCategorical
+    categories: ['Red', 'Green', 'Blue']
+    p: [.1, .7, .2]
+  - name: uniform parameter
+    type: Uniform
+    low: -7
+    high: 10

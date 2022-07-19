@@ -1,0 +1,30 @@
+parameters:
+  - name: uniform parameter
+    type: Uniform
+    low: -7
+    high: 10
+  - name: normal parameter
+    type: Normal
+    mean: -1000
+    std: 500
+  - name: truncnorm parameter
+    type: TruncNormal
+    mean: .05
+    std: .02
+    low: 0
+    high: .045
+  - name: discrete parameter
+    type: Discrete
+    samples: [-5, -4, 6, -100, 1000, 50]
+  - name: weighted discrete parameter
+    type: WeightedDiscrete
+    samples: [-5, -4, 6, -100, 1000]
+    p: [.1, .3, .05, .05, .5]
+  - name: "categorical parameter"
+    type: Categorical
+    categories: ['Red', 'Green', 'Blue']
+  - name: "weighted categoricalparameter"
+    type: WeightedCategorical
+    categories: ['Red', 'Green', 'Blue']
+    p: [.1, .7, .2]
+  
