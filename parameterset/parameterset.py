@@ -1,11 +1,11 @@
 import numpy as np
 from parameterset.parameter import ParameterInterface
 from parameterset.utils import get_parameters_from_config
-from typing import Union, dict, List
+from typing import Union, List
 
 class ParameterSet(object):
 
-    def __init__(self, parameter_list: Union[List[ParameterInterface], dict]):
+    def __init__(self, parameter_list): # Union[List[ParameterInterface], dict[str, int]]):
         
         if type(parameter_list) is dict:
             self.parameter_list = get_parameters_from_config(parameter_list)
